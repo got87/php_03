@@ -50,21 +50,14 @@
   {
 	$cnt_rep = 0; // Счетчик повторяющихся слов в тексте
     foreach ($words as $j => $w) if ($v==$w) $cnt_rep++;
-//	echo "Слово '$v' повторяется '$cnt_rep' раз";
-//	if ( (($cnt_rep % 10) >= 2) && (($cnt_rep % 10) <= 4) )  echo 'a';
-//	echo '<br>';
     echo "<tr> <td> $num </td> <td> $v </td> <td> $cnt_rep </td> </tr>";
 	$num++;
   }
 
   $cnt_wrd = count($words);
-//  echo "Количество слов в тексте = $cnt_wrd <br>";
 
   echo "<tr> <td colspan='2'> Всего слов в тексте </td> <td> $cnt_wrd </td>  </tr>";
   echo '</table>';
 
-  
-//  echo '<tr> <td> 11 </td> <td> 12 </td> <td> 13 </td> </tr>';
-//  echo '<tr> <td> 21 </td> <td> 22 </td> <td> 23 </td> </tr>';
 
 ?>
